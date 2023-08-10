@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Lists in HTML (done) -->
+    <!-- TABLES in HTML -->
+    <table>
+        <thead>
+        <caption>
+            Student Data
+        </caption>
+        <tr> <!-- Table Rows -->
+            <th> Name </th> <!-- Table Header -->
+            <th> Roll No. </th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Vansh</td>  <!--Table Data-->
+            <td>0791</td>
+        </tr>
+        <tr>
+            <td>Ushi</td>  <!--Table Data-->
+            <td>0771</td>
+        </tr>
+        </tbody>
+    </table>
+    <hr>
+<!-- USING COLSPAN -->
+    <table>
+        <thead>
+        <tr> <!-- Table Rows -->
+            <th colspan="2"> Name </th> <!-- Table Header -->
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Vansh</td>  <!--Table Data-->
+            <td>0791</td>
+        </tr>
+        <tr>
+            <td>Ushi</td>  <!--Table Data-->
+            <td>0771</td>
+        </tr>
+        </tbody>
+    </table>
+    <hr>
+<!-- FORMS in HTML -->
+<!-- Action Attribute is used to define what action needs to be performed when form is submitted -->
+    <form action="https://www.google.co.in/">
+        <!-- Form Element : INPUT -->
+        <input type="text" placeholder="Type Google here">
+        <input type="number" placeholder="Phone Number">
+        <input type="password" placeholder="Password">
+        <hr>
+
+        <!-- LABELS -->
+        <!-- Kisi bhi input element ko name dena (label) -->
+        <label for="101">
+        <input type="radio" value="class 11" name="class" id="101">class 11
+        </label>
+        <br>
+        <label for="102">
+        <input type="radio" value="class 12" name="class" id="102">class 12
+        </label>
+        <!-- Label pr click krne se bhi chach box fill ho jayega -->
+        <!-- Benefits of labels for Blind or low eye sight people -->
+        <br>
+        <hr>
+        <textarea name="feedback" id="101" placeholder="Please give your feedback">
+        </textarea>
+    </form>
+
+<!--USING CLASSES & Id-->
+    <!-- Hrr ek element ko CLASS and ID assign kr skte hai..!! -->
+    <!-- Anlogy is Class and ID = Classes and Objects OOPS -->
+    <div id="id1" class="group1"></div>
+    <div id="id2" class="group1"></div>
+    <!-- Will be helpful while adding colors using CSS -->
+
+<!-- USING CHECKBOX -->
+    <label for="math">
+        <input type="checkbox" value="Math" name="Subject" id="101">Maths
+    </label>
+    <br>
+    <label for="phy">
+        <input type="checkbox" value="Physics" name="Subject" id="102">Physics
+    </label>
+    <br>
+    <label for="chem">
+        <input type="checkbox" value="Chemistry" name="Subject" id="103">Chemistry
+    </label>
+    <hr>
+
+<!--DROP DOWN Menu (SELECT in HTML) -->
+    <select name="city" id="101">
+        <option value="Delhi">Delhi</option>
+        <option value="Banglore">Banglore</option>
+        <option value="Amritsar">Amritsar</option>
+        <option value="Chandigarh">Chandigarh</option>
+    </select>
+    <hr>
+
+<!--(iframe tag) WEBSITE inside A Website -->
+    <!-- Copied from youtube Embedded Share -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/UmnCZ7-9yDY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+    </iframe>
+    <hr>
+
+    <!-- Google refuses to connect -->
+    <!-- <iframe src="https://www.google.co.in/"></iframe>
+    <hr> -->
+
+<!--VIDEO TAG in HTML -->
+<video src="./MyVid.mp4" width="200" controls loop>My Video</video>
+</body>
+</html>
